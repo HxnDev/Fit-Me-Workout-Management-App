@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+	h1 {text-align: center;}
+	p {text-align: center;}
+	h2 {text-align: center;}
+	.bg-image {
+	  /* The image used */
+	  background-image: url("ex1.jpg");
+	  
+	  /* Add the blur effect */
+	  filter: blur(8px);
+	  -webkit-filter: blur(8px);
+	  
+	  /* Full height */
+	  height: 100%; 
+	  
+	  /* Center and scale the image nicely */
+	 
+	 
+	  background-size: cover;
+	}
+	.bg-text {
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+	  color: white;
+	  font-weight: bold;
+	  border: 3px solid #f1f1f1;
+	  position: absolute;
+	 
+	  left: 50%;
+	  transform: translate(-50%, -130%);
+
+	  width: 50%;
+	  padding: 20px;
+	  
+	}
+</style>
+</head>
+
+<body>
+<div class="bg-image"></div>
+	
+	<div class="bg-text">
+	
+		<h1 style = "text-align:center; font-family: courier;" >Progress</h1>
+		<p style = "font-family: lucida handwriting; text-align:center;" >Let's look at where we've come so far</p>
+
+		<form action = "log.php" method="post">
+			<br><br><br><br><br><br><br>
+			<label for="usid">User id:</label> <input type="text" name = "usid"><br><br>
+			<label for="tful">Targets Fulfilled:</label> <input type="text" name = "tful"><br><br>
+			<label for="wchange">Weight Change:</label> <input type="text" name = "wchange"><br><br>
+			<label for="bmichange">BMI change:</label> <input type="text" name = "bmichange"><br><br>
+			<input type= "submit" value = "Submit">
+			
+		</form>
+	</div>
+
+</body>
+</html>
